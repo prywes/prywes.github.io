@@ -2,13 +2,7 @@
 
 <head>
 <title>Adele and Eden's Wedding</title>
-<!-- Styles -->	
-<!--
-  background-image: url("Love_or_dutya.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover; -->
-  <!--background-color: rgb(236, 159, 125);-->
+
 <style>
 body {
   background: linear-gradient(to bottom, rgb(236, 159, 125), rgb(233,115,82)) fixed;
@@ -16,7 +10,7 @@ body {
   margin-left: 80px;
 }
 .container {
- width: 1100px;
+ width: 1200px;
 }
 div.a {
     font-size: 500%;
@@ -25,7 +19,7 @@ div.b {
 font-size: 200%;
 }
 div.b1{
-font-size: 110%;
+font-size: 130%;
 }
 div.c{
 text-align: left;
@@ -41,14 +35,14 @@ text-align: right;
     float: left;
 }
 .left{
-  width: 41%;
+  width: 40%;
 }
 
 .middle {
-  width: 40%;
+  width: 39%;
 }
 .right{
- width: 19%;
+ width: 21%;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -57,220 +51,381 @@ text-align: right;
     clear: both;
 }
 .parent {
-  position: relative;
-  top: 0;
-  left: 0;
+     width:200px;
+     height:200px;
+     position: relative;
+     padding: 0;
+     margin: 0;
+     text-align: left;
 }
-.image1 {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.image2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
+
+.parent-image{
+	cursor:pointer;
+	position: relative;
+	display: inline-block;
+	}
+
+.parent-text{
+	    position: absolute;
+	    top: 0; right: 0;
+	    bottom: 0; left: 0;
+	    width: 200px;
+	    height: 200px; 
+	    text-align: center;
+	    background-color: rgba(255,255,255,0.6);
+	    opacity: 0;
+	    -webkit-transition: opacity 0.6s;
+	    -moz-transition: opacity 0.6s;
+	    transition: opacity 0.6s;
+       vertical-align: middle;
+       line-height:200px;
+	}
+
+.parent-text:hover{
+	    opacity: 1;      
+	}
+
+.parent-subtext{
+	    color: black;
+	    display: inline-table;
+	    text-align: left;
+       vertical-align: middle;
+       line-height:100%;     
+       font-family: Gill Sans;       
+	}
 </style>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
 
-<!--
-<img src="edenadele.jpg" width="50%" style="float:right; margin-top:
-0.5em; margin-right: 20em"; title="justchillin">
--->
+
 <div class = "container">
 <div class="a">Adele & Eden</div><br>
 <div class="b">6+ Years of Selfies</div>
 <br>
 <br>
 <div class = "c">
-<span id = "selfie1" class="parent" >
-<img src="selfies/selfie1.jpg" width = "200" height = "200" onmouseenter="mouseOver1()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie1.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Sept. 14th, 2012<br>North/South Lake<br>New York<br>First Camping Trip</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie2" class="parent" >
-<img src="selfies/selfie2.jpg" width = "200" height = "200" onmouseenter="mouseOver2()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie2.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Nov. 5th, 2012<br>NYC Subway</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie3" class="parent" >
-<img src="selfies/selfie3.jpg" width = "200" height = "200" onmouseenter="mouseOver3()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie3.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Feb. 23rd, 2013<br>NYC</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie4" class="parent" >
-<img src="selfies/selfie4.jpg" width = "200" height = "200" onmouseenter="mouseOver4()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie4.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Mar. 5th, 2013<br>NYC<br>School Spirit</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie5" class="parent" >
-<img src="selfies/selfie5.jpg" width = "200" height = "200" onmouseenter="mouseOver5()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie5.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Mar. 19th, 2013<br>NYC</span></span>
+</span>
 </span>
 <br>
 <br>
-<span id = "selfie6" class="parent" >
-<img src="selfies/selfie6.jpg" width = "200" height = "200" onmouseenter="mouseOver6()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie6.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Dec. 10th, 2013<br>NYC Subway</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie7" class="parent" >
-<img src="selfies/selfie7.jpg" width = "200" height = "200" onmouseenter="mouseOver7()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie7.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Feb. 3rd, 2014<br>NYC</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie8" class="parent" >
-<img src="selfies/selfie8.jpg" width = "200" height = "200" onmouseenter="mouseOver8()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie8.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Mar. 14th, 2014<br>NYC</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie9" class="parent" >
-<img src="selfies/selfie9.jpg" width = "200" height = "200" onmouseenter="mouseOver9()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie9.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Dec. 20th, 2014<br>Teaneck, NJ<br>Eden's House</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie10" class="parent" >
-<img src="selfies/selfie10.jpg" width = "200" height = "200" onmouseenter="mouseOver10()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie10.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Feb. 3rd, 2015<br>NYC<br>Eden's Favorite Selfie</span></span>
+</span>
 </span>
 <br>
 <br>
-<span id = "selfie11" class="parent" >
-<img src="selfies/selfie11.jpg" width = "200" height = "200" onmouseenter="mouseOver11()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie11.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Mar. 11th, 2016<br>Seattle, WA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie12" class="parent" >
-<img src="selfies/selfie12.jpg" width = "200" height = "200" onmouseenter="mouseOver12()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie12.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Mar. 12th, 2016<br>Seattle, WA<br>We Had Fun</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie13" class="parent" >
-<img src="selfies/selfie13.jpg" width = "200" height = "200" onmouseenter="mouseOver13()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie13.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>May 20th, 2016<br>Berkeley, CA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie14" class="parent" >
-<img src="selfies/selfie14.jpg" width = "200" height = "200" onmouseenter="mouseOver14()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie14.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>May 25th, 2016<br>San Francisco, CA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie15" class="parent" >
-<img src="selfies/selfie15.jpg" width = "200" height = "200" onmouseenter="mouseOver15()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie15.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>June 22nd, 2016<br>De Young Museum<br>San Francisco, CA</span></span>
+</span>
 </span>
 <br>
 <br>
-<span id = "selfie16" class="parent" >
-<img src="selfies/selfie16.jpg" width = "200" height = "200" onmouseenter="mouseOver16()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie16.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 3rd, 2016<br>San Francisco, CA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie17" class="parent" >
-<img src="selfies/selfie17.jpg" width = "200" height = "200" onmouseenter="mouseOver17()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie17.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 4th, 2016<br>San Francisco, CA<br>Nice Weather</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie18" class="parent" >
-<img src="selfies/selfie18.jpg" width = "200" height = "200" onmouseenter="mouseOver18()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie18.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 17th, 2016<br>Berkeley, CA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie19" class="parent" >
-<img src="selfies/selfie19.jpg" width = "200" height = "200" onmouseenter="mouseOver19()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie19.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 20th, 2016<br>San Francisco, CA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie20" class="parent" >
-<img src="selfies/selfie20.jpg" width = "200" height = "200" onmouseenter="mouseOver20()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie20.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 28th, 2016<br>SF Giants Game</span></span>
+</span>
 </span>
 <br>
 <br>
-<span id = "selfie21" class="parent" >
-<img src="selfies/selfie21.jpg" width = "200" height = "200" onmouseenter="mouseOver21()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie21.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 28th, 2016<br>SF Giants Game</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie22" class="parent" >
-<img src="selfies/selfie22.jpg" width = "200" height = "200" onmouseenter="mouseOver22()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie22.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 30th, 2016<br>SF MOMA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie23" class="parent" >
-<img src="selfies/selfie23.jpg" width = "200" height = "200" onmouseenter="mouseOver23()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie23.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Aug. 19th, 2016<br>Yosemite, CA<br>Lost.</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie24" class="parent" >
-<img src="selfies/selfie24.jpg" width = "200" height = "200" onmouseenter="mouseOver24()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie24.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Aug. 20th, 2016<br>Fresno, CA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie25" class="parent" >
-<img src="selfies/selfie25.jpg" width = "200" height = "200" onmouseenter="mouseOver25()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie25.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Aug. 22nd, 2016<br>Road Trip in California</span></span>
+</span>
 </span>
 <br>
 <br>
-<span id = "selfie26" class="parent" >
-<img src="selfies/selfie26.jpg" width = "200" height = "200" onmouseenter="mouseOver26()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie26.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Aug. 27th, 2016<br>Los Angeles, CA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie27" class="parent" >
-<img src="selfies/selfie27.jpg" width = "200" height = "200" onmouseenter="mouseOver27()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie27.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Dec. 25th, 2016<br>NYC</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie28" class="parent" >
-<img src="selfies/selfie28.jpg" width = "200" height = "200" onmouseenter="mouseOver28()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie28.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Jan. 3rd, 2017<br>Catalina Island, CA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie29" class="parent" >
-<img src="selfies/selfie29.jpg" width = "200" height = "200" onmouseenter="mouseOver29()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie29.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Jan. 4th, 2017<br>Catalina Island, CA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie30" class="parent" >
-<img src="selfies/selfie30.jpg" width = "200" height = "200" onmouseenter="mouseOver30()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie30.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Sep. 17th, 2017<br>Big Bear Lake, CA</span></span>
+</span>
 </span>
 <br>
 <br>
-<span id = "selfie31" class="parent" >
-<img src="selfies/selfie31.jpg" width = "200" height = "200" onmouseenter="mouseOver31()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie31.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>May 26th, 2018<br>Joshua Tree, CA<br>Engaged!</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie32" class="parent" >
-<img src="selfies/selfie32.jpg" width = "200" height = "200" onmouseenter="mouseOver32()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie32.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>June 2nd, 2018<br>Los Angeles, CA<br>Adele's Favorite Selfie</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie33" class="parent" >
-<img src="selfies/selfie33.jpg" width = "200" height = "200" onmouseenter="mouseOver33()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie33.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>June 17th, 2018<br>Los Angeles, CA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie34" class="parent" >
-<img src="selfies/selfie34.jpg" width = "200" height = "200" onmouseenter="mouseOver34()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie34.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 23rd, 2018<br>Hardangervidda, Norway</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie35" class="parent" >
-<img src="selfies/selfie35.jpg" width = "200" height = "200" onmouseenter="mouseOver35()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie35.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 23rd, 2018<br>Hardangervidda, Norway</span></span>
+</span>
 </span>
 <br>
 <br>
-<span id = "selfie36" class="parent" >
-<img src="selfies/selfie36.jpg" width = "200" height = "200" onmouseenter="mouseOver36()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie36.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 23rd, 2018<br>Hardangervidda, Norway</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie37" class="parent" >
-<img src="selfies/selfie37.jpg" width = "200" height = "200" onmouseenter="mouseOver37()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie37.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 24th, 2018<br>Hardangervidda, Norway</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie38" class="parent" >
-<img src="selfies/selfie38.jpg" width = "200" height = "200" onmouseenter="mouseOver38()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie38.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 24th, 2018<br>Hardangervidda, Norway</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie39" class="parent" >
-<img src="selfies/selfie39.jpg" width = "200" height = "200" onmouseenter="mouseOver39()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie39.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 24th, 2018<br>Fla&#778m, Norway<br>Fjords!</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie40" class="parent" >
-<img src="selfies/selfie40.jpg" width = "200" height = "200" onmouseenter="mouseOver40()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie40.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 27th, 2018<br>Fla&#778m, Norway</span></span>
+</span>
 </span>
 <br>
 <br>
-<span id = "selfie41" class="parent" >
-<img src="selfies/selfie41.jpg" width = "200" height = "200" onmouseenter="mouseOver41()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie41.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 27th, 2018<br>Fla&#778m, Norway</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie42" class="parent" >
-<img src="selfies/selfie42.jpg" width = "200" height = "200" onmouseenter="mouseOver42()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie42.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>July 27th, 2018<br>Fla&#778m, Norway<br>Hallo!</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie43" class="parent" >
-<img src="selfies/selfie43.jpg" width = "200" height = "200" onmouseenter="mouseOver43()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie43.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Aug. 3rd, 2018<br>Los Angeles, CA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie44" class="parent" >
-<img src="selfies/selfie44.jpg" width = "200" height = "200" onmouseenter="mouseOver44()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie44.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Aug. 25th, 2018<br>Los Angeles, CA</span></span>
+</span>
 </span>
 &nbsp;&nbsp;&nbsp;
-<span id = "selfie45" class="parent" >
-<img src="selfies/selfie45.jpg" width = "200" height = "200" onmouseenter="mouseOver45()">
+<span class="parent">
+<span class = "parent-image">
+<img src="selfies/selfie45.jpg" width = "200" height = "200">
+<span class="parent-text"><span class ="parent-subtext"><br><br><br><br>Sept. 3rd, 2018<br>Los Angeles, CA</span></span>
+</span>
 </span>
 </div>
 <br>
@@ -293,9 +448,9 @@ text-align: right;
   <div class = "c">
   <div class = "b">
   * Registries<br><br>
-  REI<br>
   China Royale<br>
-  ZOLA<br>
+  REI<br>
+  Bed Bath and Beyond<br>
   </div>
   </div>
   </div>
@@ -322,337 +477,8 @@ text-align: right;
   </div>
 </div>
 </div>
-<!--
-<iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 
-<div class= "e">
-<br>
-<audio id="my_audio" controls autoplay>
-  <source src="openingsong.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-June 30th, 2019 at the Greenpoint Loft in Brooklyn, NY<br>
-4:00 PM<br>
-All are welcome!<br>
 
-</div>
--->
 
-<script type="text/javascript">
-function mouseOver1() {
-	 document.getElementById("selfie1").innerHTML = '<img src="selfies/selfie1_text.jpg" width = "200" height = "200" onmouseleave="mouseOut1()">';
-}
-function mouseOut1() {
-	 document.getElementById("selfie1").innerHTML = '<img src="selfies/selfie1.jpg" width = "200" height = "200" onmouseenter="mouseOver1()">';
-}
-
-function mouseOver2() {
-	 document.getElementById("selfie2").innerHTML = '<img src="selfies/selfie2_text.jpg" width = "200" height = "200" onmouseleave="mouseOut2()">';
-}
-function mouseOut2() {
-	 document.getElementById("selfie2").innerHTML = '<img src="selfies/selfie2.jpg" width = "200" height = "200" onmouseenter="mouseOver2()">';
-}
-
-function mouseOver3() {
-	 document.getElementById("selfie3").innerHTML = '<img src="selfies/selfie3_text.jpg" width = "200" height = "200" onmouseleave="mouseOut3()">';
-}
-function mouseOut3() {
-	 document.getElementById("selfie3").innerHTML = '<img src="selfies/selfie3.jpg" width = "200" height = "200" onmouseenter="mouseOver3()">';
-}
-
-function mouseOver4() {
-	 document.getElementById("selfie4").innerHTML = '<img src="selfies/selfie4_text.jpg" width = "200" height = "200" onmouseleave="mouseOut4()">';
-}
-function mouseOut4() {
-	 document.getElementById("selfie4").innerHTML = '<img src="selfies/selfie4.jpg" width = "200" height = "200" onmouseenter="mouseOver4()">';
-}
-
-function mouseOver5() {
-	 document.getElementById("selfie5").innerHTML = '<img src="selfies/selfie5_text.jpg" width = "200" height = "200" onmouseleave="mouseOut5()">';
-}
-function mouseOut5() {
-	 document.getElementById("selfie5").innerHTML = '<img src="selfies/selfie5.jpg" width = "200" height = "200" onmouseenter="mouseOver5()">';
-}
-
-function mouseOver6() {
-	 document.getElementById("selfie6").innerHTML = '<img src="selfies/selfie6_text.jpg" width = "200" height = "200" onmouseleave="mouseOut6()">';
-}
-function mouseOut6() {
-	 document.getElementById("selfie6").innerHTML = '<img src="selfies/selfie6.jpg" width = "200" height = "200" onmouseenter="mouseOver6()">';
-}
-
-function mouseOver7() {
-	 document.getElementById("selfie7").innerHTML = '<img src="selfies/selfie7_text.jpg" width = "200" height = "200" onmouseleave="mouseOut7()">';
-}
-function mouseOut7() {
-	 document.getElementById("selfie7").innerHTML = '<img src="selfies/selfie7.jpg" width = "200" height = "200" onmouseenter="mouseOver7()">';
-}
-
-function mouseOver8() {
-	 document.getElementById("selfie8").innerHTML = '<img src="selfies/selfie8_text.jpg" width = "200" height = "200" onmouseleave="mouseOut8()">';
-}
-function mouseOut8() {
-	 document.getElementById("selfie8").innerHTML = '<img src="selfies/selfie8.jpg" width = "200" height = "200" onmouseenter="mouseOver8()">';
-}
-
-function mouseOver9() {
-	 document.getElementById("selfie9").innerHTML = '<img src="selfies/selfie9_text.jpg" width = "200" height = "200" onmouseleave="mouseOut9()">';
-}
-function mouseOut9() {
-	 document.getElementById("selfie9").innerHTML = '<img src="selfies/selfie9.jpg" width = "200" height = "200" onmouseenter="mouseOver9()">';
-}
-
-function mouseOver10() {
-	 document.getElementById("selfie10").innerHTML = '<img src="selfies/selfie10_text.jpg" width = "200" height = "200" onmouseleave="mouseOut10()">';
-}
-function mouseOut10() {
-	 document.getElementById("selfie10").innerHTML = '<img src="selfies/selfie10.jpg" width = "200" height = "200" onmouseenter="mouseOver10()">';
-}
-
-function mouseOver11() {
-	 document.getElementById("selfie11").innerHTML = '<img src="selfies/selfie11_text.jpg" width = "200" height = "200" onmouseleave="mouseOut11()">';
-}
-function mouseOut11() {
-	 document.getElementById("selfie11").innerHTML = '<img src="selfies/selfie11.jpg" width = "200" height = "200" onmouseenter="mouseOver11()">';
-}
-
-function mouseOver12() {
-	 document.getElementById("selfie12").innerHTML = '<img src="selfies/selfie12_text.jpg" width = "200" height = "200" onmouseleave="mouseOut12()">';
-}
-function mouseOut12() {
-	 document.getElementById("selfie12").innerHTML = '<img src="selfies/selfie12.jpg" width = "200" height = "200" onmouseenter="mouseOver12()">';
-}
-
-function mouseOver13() {
-	 document.getElementById("selfie13").innerHTML = '<img src="selfies/selfie13_text.jpg" width = "200" height = "200" onmouseleave="mouseOut13()">';
-}
-function mouseOut13() {
-	 document.getElementById("selfie13").innerHTML = '<img src="selfies/selfie13.jpg" width = "200" height = "200" onmouseenter="mouseOver13()">';
-}
-
-function mouseOver14() {
-	 document.getElementById("selfie14").innerHTML = '<img src="selfies/selfie14_text.jpg" width = "200" height = "200" onmouseleave="mouseOut14()">';
-}
-function mouseOut14() {
-	 document.getElementById("selfie14").innerHTML = '<img src="selfies/selfie14.jpg" width = "200" height = "200" onmouseenter="mouseOver14()">';
-}
-
-function mouseOver15() {
-	 document.getElementById("selfie15").innerHTML = '<img src="selfies/selfie15_text.jpg" width = "200" height = "200" onmouseleave="mouseOut15()">';
-}
-function mouseOut15() {
-	 document.getElementById("selfie15").innerHTML = '<img src="selfies/selfie15.jpg" width = "200" height = "200" onmouseenter="mouseOver15()">';
-}
-
-function mouseOver16() {
-	 document.getElementById("selfie16").innerHTML = '<img src="selfies/selfie16_text.jpg" width = "200" height = "200" onmouseleave="mouseOut16()">';
-}
-function mouseOut16() {
-	 document.getElementById("selfie16").innerHTML = '<img src="selfies/selfie16.jpg" width = "200" height = "200" onmouseenter="mouseOver16()">';
-}
-
-function mouseOver17() {
-	 document.getElementById("selfie17").innerHTML = '<img src="selfies/selfie17_text.jpg" width = "200" height = "200" onmouseleave="mouseOut17()">';
-}
-function mouseOut17() {
-	 document.getElementById("selfie17").innerHTML = '<img src="selfies/selfie17.jpg" width = "200" height = "200" onmouseenter="mouseOver17()">';
-}
-
-function mouseOver18() {
-	 document.getElementById("selfie18").innerHTML = '<img src="selfies/selfie18_text.jpg" width = "200" height = "200" onmouseleave="mouseOut18()">';
-}
-function mouseOut18() {
-	 document.getElementById("selfie18").innerHTML = '<img src="selfies/selfie18.jpg" width = "200" height = "200" onmouseenter="mouseOver18()">';
-}
-
-function mouseOver19() {
-	 document.getElementById("selfie19").innerHTML = '<img src="selfies/selfie19_text.jpg" width = "200" height = "200" onmouseleave="mouseOut19()">';
-}
-function mouseOut19() {
-	 document.getElementById("selfie19").innerHTML = '<img src="selfies/selfie19.jpg" width = "200" height = "200" onmouseenter="mouseOver19()">';
-}
-
-function mouseOver20() {
-	 document.getElementById("selfie20").innerHTML = '<img src="selfies/selfie20_text.jpg" width = "200" height = "200" onmouseleave="mouseOut20()">';
-}
-function mouseOut20() {
-	 document.getElementById("selfie20").innerHTML = '<img src="selfies/selfie20.jpg" width = "200" height = "200" onmouseenter="mouseOver20()">';
-}
-
-function mouseOver21() {
-	 document.getElementById("selfie21").innerHTML = '<img src="selfies/selfie21_text.jpg" width = "200" height = "200" onmouseleave="mouseOut21()">';
-}
-function mouseOut21() {
-	 document.getElementById("selfie21").innerHTML = '<img src="selfies/selfie21.jpg" width = "200" height = "200" onmouseenter="mouseOver21()">';
-}
-
-function mouseOver22() {
-	 document.getElementById("selfie22").innerHTML = '<img src="selfies/selfie22_text.jpg" width = "200" height = "200" onmouseleave="mouseOut22()">';
-}
-function mouseOut22() {
-	 document.getElementById("selfie22").innerHTML = '<img src="selfies/selfie22.jpg" width = "200" height = "200" onmouseenter="mouseOver22()">';
-}
-
-function mouseOver23() {
-	 document.getElementById("selfie23").innerHTML = '<img src="selfies/selfie23_text.jpg" width = "200" height = "200" onmouseleave="mouseOut23()">';
-}
-function mouseOut23() {
-	 document.getElementById("selfie23").innerHTML = '<img src="selfies/selfie23.jpg" width = "200" height = "200" onmouseenter="mouseOver23()">';
-}
-
-function mouseOver24() {
-	 document.getElementById("selfie24").innerHTML = '<img src="selfies/selfie24_text.jpg" width = "200" height = "200" onmouseleave="mouseOut24()">';
-}
-function mouseOut24() {
-	 document.getElementById("selfie24").innerHTML = '<img src="selfies/selfie24.jpg" width = "200" height = "200" onmouseenter="mouseOver24()">';
-}
-
-function mouseOver25() {
-	 document.getElementById("selfie25").innerHTML = '<img src="selfies/selfie25_text.jpg" width = "200" height = "200" onmouseleave="mouseOut25()">';
-}
-function mouseOut25() {
-	 document.getElementById("selfie25").innerHTML = '<img src="selfies/selfie25.jpg" width = "200" height = "200" onmouseenter="mouseOver25()">';
-}
-
-function mouseOver26() {
-	 document.getElementById("selfie26").innerHTML = '<img src="selfies/selfie26_text.jpg" width = "200" height = "200" onmouseleave="mouseOut26()">';
-}
-function mouseOut26() {
-	 document.getElementById("selfie26").innerHTML = '<img src="selfies/selfie26.jpg" width = "200" height = "200" onmouseenter="mouseOver26()">';
-}
-
-function mouseOver27() {
-	 document.getElementById("selfie27").innerHTML = '<img src="selfies/selfie27_text.jpg" width = "200" height = "200" onmouseleave="mouseOut27()">';
-}
-function mouseOut27() {
-	 document.getElementById("selfie27").innerHTML = '<img src="selfies/selfie27.jpg" width = "200" height = "200" onmouseenter="mouseOver27()">';
-}
-
-function mouseOver28() {
-	 document.getElementById("selfie28").innerHTML = '<img src="selfies/selfie28_text.jpg" width = "200" height = "200" onmouseleave="mouseOut28()">';
-}
-function mouseOut28() {
-	 document.getElementById("selfie28").innerHTML = '<img src="selfies/selfie28.jpg" width = "200" height = "200" onmouseenter="mouseOver28()">';
-}
-
-function mouseOver29() {
-	 document.getElementById("selfie29").innerHTML = '<img src="selfies/selfie29_text.jpg" width = "200" height = "200" onmouseleave="mouseOut29()">';
-}
-function mouseOut29() {
-	 document.getElementById("selfie29").innerHTML = '<img src="selfies/selfie29.jpg" width = "200" height = "200" onmouseenter="mouseOver29()">';
-}
-
-function mouseOver30() {
-	 document.getElementById("selfie30").innerHTML = '<img src="selfies/selfie30_text.jpg" width = "200" height = "200" onmouseleave="mouseOut30()">';
-}
-function mouseOut30() {
-	 document.getElementById("selfie30").innerHTML = '<img src="selfies/selfie30.jpg" width = "200" height = "200" onmouseenter="mouseOver30()">';
-}
-
-function mouseOver31() {
-	 document.getElementById("selfie31").innerHTML = '<img src="selfies/selfie31_text.jpg" width = "200" height = "200" onmouseleave="mouseOut31()">';
-}
-function mouseOut31() {
-	 document.getElementById("selfie31").innerHTML = '<img src="selfies/selfie31.jpg" width = "200" height = "200" onmouseenter="mouseOver31()">';
-}
-
-function mouseOver32() {
-	 document.getElementById("selfie32").innerHTML = '<img src="selfies/selfie32_text.jpg" width = "200" height = "200" onmouseleave="mouseOut32()">';
-}
-function mouseOut32() {
-	 document.getElementById("selfie32").innerHTML = '<img src="selfies/selfie32.jpg" width = "200" height = "200" onmouseenter="mouseOver32()">';
-}
-
-function mouseOver33() {
-	 document.getElementById("selfie33").innerHTML = '<img src="selfies/selfie33_text.jpg" width = "200" height = "200" onmouseleave="mouseOut33()">';
-}
-function mouseOut33() {
-	 document.getElementById("selfie33").innerHTML = '<img src="selfies/selfie33.jpg" width = "200" height = "200" onmouseenter="mouseOver33()">';
-}
-
-function mouseOver34() {
-	 document.getElementById("selfie34").innerHTML = '<img src="selfies/selfie34_text.jpg" width = "200" height = "200" onmouseleave="mouseOut34()">';
-}
-function mouseOut34() {
-	 document.getElementById("selfie34").innerHTML = '<img src="selfies/selfie34.jpg" width = "200" height = "200" onmouseenter="mouseOver34()">';
-}
-
-function mouseOver35() {
-	 document.getElementById("selfie35").innerHTML = '<img src="selfies/selfie35_text.jpg" width = "200" height = "200" onmouseleave="mouseOut35()">';
-}
-function mouseOut35() {
-	 document.getElementById("selfie35").innerHTML = '<img src="selfies/selfie35.jpg" width = "200" height = "200" onmouseenter="mouseOver35()">';
-}
-
-function mouseOver36() {
-	 document.getElementById("selfie36").innerHTML = '<img src="selfies/selfie36_text.jpg" width = "200" height = "200" onmouseleave="mouseOut36()">';
-}
-function mouseOut36() {
-	 document.getElementById("selfie36").innerHTML = '<img src="selfies/selfie36.jpg" width = "200" height = "200" onmouseenter="mouseOver36()">';
-}
-
-function mouseOver37() {
-	 document.getElementById("selfie37").innerHTML = '<img src="selfies/selfie37_text.jpg" width = "200" height = "200" onmouseleave="mouseOut37()">';
-}
-function mouseOut37() {
-	 document.getElementById("selfie37").innerHTML = '<img src="selfies/selfie37.jpg" width = "200" height = "200" onmouseenter="mouseOver37()">';
-}
-
-function mouseOver38() {
-	 document.getElementById("selfie38").innerHTML = '<img src="selfies/selfie38_text.jpg" width = "200" height = "200" onmouseleave="mouseOut38()">';
-}
-function mouseOut38() {
-	 document.getElementById("selfie38").innerHTML = '<img src="selfies/selfie38.jpg" width = "200" height = "200" onmouseenter="mouseOver38()">';
-}
-
-function mouseOver39() {
-	 document.getElementById("selfie39").innerHTML = '<img src="selfies/selfie39_text.jpg" width = "200" height = "200" onmouseleave="mouseOut39()">';
-}
-function mouseOut39() {
-	 document.getElementById("selfie39").innerHTML = '<img src="selfies/selfie39.jpg" width = "200" height = "200" onmouseenter="mouseOver39()">';
-}
-
-function mouseOver40() {
-	 document.getElementById("selfie40").innerHTML = '<img src="selfies/selfie40_text.jpg" width = "200" height = "200" onmouseleave="mouseOut40()">';
-}
-function mouseOut40() {
-	 document.getElementById("selfie40").innerHTML = '<img src="selfies/selfie40.jpg" width = "200" height = "200" onmouseenter="mouseOver40()">';
-}
-function mouseOver41() {
-	 document.getElementById("selfie41").innerHTML = '<img src="selfies/selfie41_text.jpg" width = "200" height = "200" onmouseleave="mouseOut41()">';
-}
-function mouseOut41() {
-	 document.getElementById("selfie41").innerHTML = '<img src="selfies/selfie41.jpg" width = "200" height = "200" onmouseenter="mouseOver41()">';
-}
-
-function mouseOver42() {
-	 document.getElementById("selfie42").innerHTML = '<img src="selfies/selfie42_text.jpg" width = "200" height = "200" onmouseleave="mouseOut42()">';
-}
-function mouseOut42() {
-	 document.getElementById("selfie42").innerHTML = '<img src="selfies/selfie42.jpg" width = "200" height = "200" onmouseenter="mouseOver42()">';
-}
-
-function mouseOver43() {
-	 document.getElementById("selfie43").innerHTML = '<img src="selfies/selfie43_text.jpg" width = "200" height = "200" onmouseleave="mouseOut43()">';
-}
-function mouseOut43() {
-	 document.getElementById("selfie43").innerHTML = '<img src="selfies/selfie43.jpg" width = "200" height = "200" onmouseenter="mouseOver43()">';
-}
-
-function mouseOver44() {
-	 document.getElementById("selfie44").innerHTML = '<img src="selfies/selfie44_text.jpg" width = "200" height = "200" onmouseleave="mouseOut44()">';
-}
-function mouseOut44() {
-	 document.getElementById("selfie44").innerHTML = '<img src="selfies/selfie44.jpg" width = "200" height = "200" onmouseenter="mouseOver44()">';
-}
-
-function mouseOver45() {
-	 document.getElementById("selfie45").innerHTML = '<img src="selfies/selfie45_text.jpg" width = "200" height = "200" onmouseleave="mouseOut45()">';
-}
-function mouseOut45() {
-	 document.getElementById("selfie45").innerHTML = '<img src="selfies/selfie45.jpg" width = "200" height = "200" onmouseenter="mouseOver45()">';
-}
-
-</script>
 </body>
 
